@@ -53,7 +53,7 @@ To install DivinePL:
 
 1. Clone the repository:
 ```
-git clone https://github.com/your-username/DivinePL.git
+git clone https://github.com/tristanpoland/DivinePL.git
 ```
 
 2. Build the interpreter:
