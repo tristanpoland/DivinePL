@@ -1,0 +1,25 @@
+[package]
+name = "divine-pl"
+version = "0.1.0"
+edition = "2021"
+authors = ["Your Name <your.email@example.com>"]
+description = "DivinePL - The Holy Programming Language Runtime"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/tristanpoland/DivinePL"
+keywords = ["programming-language", "interpreter", "satire", "christian"]
+categories = ["command-line-utilities", "development-tools"]
+
+[dependencies]
+clap = { version = "4.4", features = ["derive"] }
+chrono = "0.4"
+colored = "2.0"
+rand = "0.8"
+rng = "0.1.0"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
+panic = "abort"
